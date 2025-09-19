@@ -1,4 +1,4 @@
-public class ConversaoGraus {
+public class Ex2 {
     public static void main(String[] args) {
         System.out.println("Celsius -> Fahrenheit");
         for (int c = 10; c <= 100; c += 10) {

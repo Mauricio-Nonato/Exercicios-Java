@@ -1,4 +1,4 @@
-public class FatoriaisImpares {
+public class Ex7 {
     public static long fatorial(int n) {
         long resultado = 1;
         for (int i = 2; i <= n; i++) {

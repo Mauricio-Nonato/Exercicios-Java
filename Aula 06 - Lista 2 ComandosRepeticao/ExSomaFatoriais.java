@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class SomaFatoriais {
+public class ExSomaFatoriais {
     public static long fatorial(int n) {
         long resultado = 1;
         for (int i = 2; i <= n; i++) {

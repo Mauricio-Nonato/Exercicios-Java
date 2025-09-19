@@ -1,33 +1,19 @@
-/* IMC - Crie uma aplicação para realizar o cálculo do IMC, a aplicação deverá solicitar do usuário o Peso
-e a Altura, deverá então processar o Índice de Massa Corporal, e com esse valor exibir as mensagens
-de acordo com a tabela de classificação de IMC (Pesquise como calcular o IMC). */
+/* Ler um valor numérico inteiro qualquer e fazer a sua apresentação caso o valor não seja maior que
+TRES. Utilize apenas o .não. (da tabela de operadores lógicos) para a solução do problema. Atenção
+para esse problema não deve ser utilizado os operadores relacionais.  */
 
 import java.util.Scanner;
 
 public class Ex04 {
     public static void main(String args[]) {
+        byte num;
         Scanner input = new Scanner(System.in);
-
-        double altura, peso, imc;
-
-        System.out.print("Digite sua altura (M): ");
-        altura = input.nextDouble();
-        System.out.print("Digite seu peso (KG): ");
-        peso = input.nextDouble();
-
-        imc = peso/(altura * altura);
-
-        System.out.printf("IMC: %.2f\n" + imc);
-
-        if (imc <= 18.5) {
-            System.out.println("Você esta abaixo do imc ideal");
-        } else if(imc > 18.5 && imc <= 24.9) {
-            System.out.println("Você esta com o imc ideal");
-        } else if(imc > 24.9 && imc <= 29.9) {
-            System.out.println("Você esta sobrepeso");
+        System.out.print("Digite um número: ");
+        num = input.nextByte();
+        if (!(num > 3)) {
+            System.out.println("Número " + " permitido!");
         } else {
-            System.out.println("Você está obeso");
+            System.out.println("Número não permitido! ( acima de 3 )");
         }
-        input.close();
     }
 }
